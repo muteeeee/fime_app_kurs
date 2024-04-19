@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="fime" >
+        <item name="android:textSize">132sp</item>
+        <item name="android:textColor">#7446BE</item>
+        <item name="android:shadowColor">#8D68C8</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">23</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+
+    <style name="find_your_g">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="buttonPristupit">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="tips_and_sett">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="gpu_stl">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="cpu_stl">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+
+    <style name="ram_stl">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="os_stl">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+</resources>

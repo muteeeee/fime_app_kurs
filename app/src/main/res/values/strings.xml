@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name" translatable="false">Fime_App
+    </string>
+
+    <string name="fime" translatable="false">
+    FIME
+</string>
+
+    <string name="find_your_g">
+Find {Your} game\n
+    </string>
+
+    <string name="buttonPristupi">
+ Приступим
+    </string>
+
+    <string name="Uslovia_text">
+      Я согласен(а) с условими пользования приложением
+    </string>
+
+    <string name="tips_and_se">
+Tips and settings
+</string>
+
+    <string name="gpu_str">
+GPU - это дискретная или встроенная видеокарта(видеоадаптер) в Вашем компьютере.
+    </string>
+
+    <string name="cpu_str">
+CPU - это установленный центральный процессор в Вашем компьютере.
+    </string>
+
+    <string name="ram_str">
+RAM - это количество установленной оперативной памяти в Ваш компьютер.
+    </string>
+    <string name="os_str">
+OS - это операционная система которая установленна на Вашем компьютере.
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
