@@ -25,7 +25,7 @@ public class OngoingActivity extends AppCompatActivity {
 
                 switch(item.getItemId())
                 {
-                    case R.id.setting_tips:
+                    case R.id.Setting:
                         startActivity(new Intent(getApplicationContext(), Setting_tips.class));
                         overridePendingTransition(0,0);
                         return  true;
@@ -33,8 +33,11 @@ public class OngoingActivity extends AppCompatActivity {
                         startActivity(new Intent(getApplicationContext(),HistoryActivity.class));
                         overridePendingTransition(0,0);
                         return true;
+                    case R.id.Search:
+                        startActivity(new Intent(getApplicationContext(), game_selection.class));
+                        overridePendingTransition(0,0);
+                        return  true;
                     case R.id.Ongoing:
-
                         return true;
                 }
                 return false;

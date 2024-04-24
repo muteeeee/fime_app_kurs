@@ -27,13 +27,17 @@ public class HistoryActivity extends AppCompatActivity {
 
                 switch(item.getItemId())
                 {
-                        case R.id.setting_tips:
+                    case R.id.Setting:
                         startActivity(new Intent(getApplicationContext(), Setting_tips.class));
                         overridePendingTransition(0,0);
                         return  true;
-                        case R.id.History:
-                            return true;
-                        case R.id.Ongoing:
+                    case R.id.History:
+                        return true;
+                    case R.id.Search:
+                        startActivity(new Intent(getApplicationContext(), game_selection.class));
+                        overridePendingTransition(0,0);
+                        return  true;
+                    case R.id.Ongoing:
                         startActivity(new Intent(getApplicationContext(),OngoingActivity.class));
                         overridePendingTransition(0,0);
                         return true;

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Search"
+    android:layout_width="428dp"
+    android:background="@drawable/gameselect_background"
+    android:layout_height="926dp"
+    tools:context=".Search">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="408dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-8dp"
+        android:layout_marginTop="772dp"
+        android:layout_marginEnd="11dp"
+        android:background="@android:color/transparent"
+        android:gravity="bottom|center_horizontal"
+        app:itemIconSize="48dp"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_nav" />
+
+    <TextView
+        android:id="@+id/fimelogotwo"
+        android:layout_width="wrap_content"
+        android:layout_height="218dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="605dp"
+        android:fontFamily="@font/iceberg"
+        android:gravity="center"
+        android:lineHeight="156sp"
+        android:text="@string/fime"
+        android:textAppearance="@style/fime" />
+
+    <TextView
+        android:id="@+id/find_your_game_str"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="286dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="556dp"
+        android:fontFamily="@font/iceberg"
+        android:gravity="center"
+        android:lineHeight="39sp"
+        android:text="Game selection"
+        android:textAppearance="@style/find_your_g" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="469dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/editTextText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="399dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="332dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="123dp"
+        android:layout_marginBottom="270dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name" />
+
+
+</RelativeLayout>
