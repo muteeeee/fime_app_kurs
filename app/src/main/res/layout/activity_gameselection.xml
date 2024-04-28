@@ -43,7 +43,7 @@
         android:text="@string/fime"
         android:textAppearance="@style/fime" />
 
-    <TextView
+    <TextView   
         android:id="@+id/find_your_game_str"
         android:layout_width="wrap_content"
         android:layout_height="72dp"

@@ -20,7 +20,7 @@
             android:exported="false" />
         <activity
             android:name=".game_selection"
-                android:exported="false" />
+            android:exported="false" />
         <activity
             android:name=".OngoingActivity"
             android:exported="false"

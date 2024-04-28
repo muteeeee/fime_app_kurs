@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "91531229474",
+    "firebase_url": "https://kursovoibd-default-rtdb.firebaseio.com",
+    "project_id": "kursovoibd",
+    "storage_bucket": "kursovoibd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91531229474:android:dae4c853c6be53f6a90d7b",
+        "android_client_info": {
+          "package_name": "com.example.fime_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXYYLcV07a5OEYxS2qXNk_QCOLWDDIAy8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
