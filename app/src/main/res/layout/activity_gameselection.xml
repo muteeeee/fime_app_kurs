@@ -9,6 +9,40 @@
     android:layout_height="926dp"
     tools:context=".Search">
 
+    <TextView
+        android:id="@+id/fimelogo"
+        android:layout_width="wrap_content"
+        android:layout_height="142dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="59dp"
+        android:fontFamily="@font/iceberg"
+        android:gravity="center_horizontal"
+        android:lineHeight="156sp"
+        android:text="@string/fime"
+        android:textAppearance="@style/fime" />
+
+    <TextView
+        android:id="@+id/tips_and_settings"
+        android:layout_width="264dp"
+        android:layout_height="51dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginLeft="82dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="82dp"
+        android:fontFamily="@font/iceberg"
+        android:gravity="center_horizontal|top"
+        android:lineHeight="39sp"
+        android:text="Game selection"
+        android:textAppearance="@style/tips_and_sett" />
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="408dp"
@@ -25,89 +59,115 @@
         app:labelVisibilityMode="unlabeled"
         app:menu="@menu/bottom_nav" />
 
+
     <TextView
-        android:id="@+id/fimelogotwo"
+        android:id="@+id/processorLabel"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="257dp"
+        android:layout_marginEnd="202dp"
+        android:fontFamily="@font/k2d_semibold"
+        android:text="Выберите CPU:" />
+
+    <Spinner
+        android:id="@+id/processorSpinner"
+        android:layout_width="255dp"
+        android:layout_height="53dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="86dp"
+        android:layout_marginTop="284dp"
+        android:layout_marginEnd="87dp"
+        android:fontFamily="@font/k2d_semibold" />
+
+    <TextView
+        android:id="@+id/graphicsCardLabel"
         android:layout_width="wrap_content"
-        android:layout_height="218dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/processorSpinner"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="235dp"
+        android:fontFamily="@font/k2d_semibold"
+        android:text="Выберите GPU :" />
+
+    <Spinner
+        android:id="@+id/graphicsCardSpinner"
+        android:layout_width="255dp"
+        android:layout_height="53dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="86dp"
+        android:layout_marginTop="385dp"
+        android:layout_marginEnd="87dp"
+        android:fontFamily="@font/k2d_semibold" />
+
+    <TextView
+        android:id="@+id/ramLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/graphicsCardSpinner"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="241dp"
+        android:fontFamily="@font/k2d_semibold"
+        android:text="Выберите Ram:" />
+
+    <Spinner
+        android:id="@+id/ramSpinner"
+        android:layout_width="255dp"
+        android:layout_height="53dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="86dp"
+        android:layout_marginTop="486dp"
+        android:layout_marginEnd="87dp"
+        android:fontFamily="@font/k2d_semibold" />
+
+    <TextView
+        android:id="@+id/operatingSystemLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ramSpinner"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="250dp"
+        android:fontFamily="@font/k2d_semibold"
+        android:text="Выберите OS:" />
+
+    <Spinner
+        android:id="@+id/operatingSystemSpinner"
+        android:layout_width="255dp"
+        android:layout_height="53dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="86dp"
+        android:layout_marginTop="587dp"
+        android:layout_marginEnd="87dp"
+        android:fontFamily="@font/k2d_semibold" />
+
+    <Button
+        android:id="@+id/findGamesButton"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="91dp"
-        android:layout_marginEnd="71dp"
-        android:layout_marginBottom="605dp"
-        android:fontFamily="@font/iceberg"
-        android:gravity="center"
-        android:lineHeight="156sp"
-        android:text="@string/fime"
-        android:textAppearance="@style/fime" />
-
-    <TextView   
-        android:id="@+id/find_your_game_str"
-        android:layout_width="wrap_content"
-        android:layout_height="72dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="85dp"
-        android:layout_marginTop="286dp"
-        android:layout_marginEnd="83dp"
-        android:layout_marginBottom="556dp"
-        android:fontFamily="@font/iceberg"
-        android:gravity="center"
-        android:lineHeight="39sp"
-        android:text="Game selection"
-        android:textAppearance="@style/find_your_g" />
-
-    <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="121dp"
-        android:layout_marginBottom="469dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Name" />
-
-    <EditText
-        android:id="@+id/editTextText1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="121dp"
-        android:layout_marginBottom="399dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Name" />
-
-    <EditText
-        android:id="@+id/editTextText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="121dp"
-        android:layout_marginBottom="332dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Name" />
-
-    <EditText
-        android:id="@+id/editTextText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="123dp"
-        android:layout_marginBottom="270dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Name" />
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="674dp"
+        android:layout_marginEnd="131dp"
+        android:background="@drawable/naitibutton"
+        android:backgroundTint="#6A5ACD"
+        android:fontFamily="@font/k2d_semibold"
+        android:text="Найти игры"
+        android:textColor="@color/black" />
 
 
 </RelativeLayout>
+

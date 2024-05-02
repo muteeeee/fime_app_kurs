@@ -1,9 +1,10 @@
 <resources>
+
     <string name="app_name" translatable="false">Fime_App
     </string>
 
     <string name="fime" translatable="false">
-    FIME
+FIME
 </string>
 
     <string name="find_your_g">
@@ -80,4 +81,67 @@ OS - это операционная система которая устано�
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+
+    <string name="Fime_Finder">GameFinder</string>
+    <string-array name="processors_array">
+        <item>INTEL CORE I3</item>
+        <item>INTEL CORE I5</item>
+        <item>INTEL CORE I7</item>
+    </string-array>
+    <string-array name="graphics_cards_array">
+        <item>GTX 1050</item>
+        <item>GTX 1660</item>
+        <item>RTX 3060</item>
+        <item>RTX 4090</item>
+    </string-array>
+    <string-array name="ram_array">
+        <item>4GB</item>
+        <item>8GB</item>
+        <item>16GB</item>
+        <item>32GB</item>
+        <item>64GB</item>
+    </string-array>
+    <string-array name="operating_systems_array">
+        <item>Windows</item>
+        <item>Linux</item>
+        <item>macOS</item>
+    </string-array>
+
+
+
+
+    <string-array name="genres_array">
+        <item>Не выбрано</item>
+        <item>FPS Shooter</item>
+        <item>Arcade game</item>
+        <item>Action-adventure</item>
+        <item>RPG</item>
+        <item>Stealth action</item>
+        <item>Survival horror</item>
+        <item>Battle royale</item>
+        <item>Football</item>
+        <item>MOBA</item>
+        <item>Sandbox</item>
+    </string-array>
+    <string-array name="years_array">
+        <item>Не выбрано</item>
+        <item>2023</item>
+        <item>2021</item>
+        <item>2020</item>
+        <item>2019</item>
+        <item>2018</item>
+        <item>2017</item>
+        <item>2016</item>
+        <item>2015</item>
+        <item>2013</item>
+        <item>2011</item>
+        <item>2009</item>
+        <item>2005</item>
+        <item>2000</item>
+
+    </string-array>
+
+
+
+
 </resources>

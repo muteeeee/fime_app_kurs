@@ -3,40 +3,40 @@
 xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:aapt="http://schemas.android.com/aapt"
 android:width="428dp"
-android:height="926dp"
+android:height="4994dp"
 android:viewportWidth="428"
-android:viewportHeight="926"
+android:viewportHeight="4994"
     >
 <group>
     <clip-path
-        android:pathData="M0 0H428V926H0V0Z"
+        android:pathData="M0 0H428V4994H0V0Z"
         />
     <group
-        android:translateX="4.701"
-        android:translateY="-0.154"
+        android:translateX="0.118"
+        android:translateY="0.026"
         android:pivotX="214"
-        android:pivotY="463"
-        android:scaleX="9.974"
-        android:scaleY="5.773"
-        android:rotation="166.325"
+        android:pivotY="2497"
+        android:scaleX="5.235"
+        android:scaleY="2.2"
+        android:rotation="21.747"
         >
         <path
-            android:pathData="M0 0V926H428V0"
+            android:pathData="M0 0V4994H428V0"
             >
             <aapt:attr name="android:fillColor">
                 <gradient
                     android:type="linear"
-                    android:startX="214"
-                    android:startY="233"
-                    android:endX="33"
-                    android:endY="433"
+                    android:startX="107"
+                    android:startY="3497"
+                    android:endX="1213"
+                    android:endY="223"
                     >
                     <item
-                        android:color="#8D68C8"
+                        android:color="#FCECE9F2"
                         android:offset="0"
                         />
                     <item
-                        android:color="#FFFFFF"
+                        android:color="#7446BE"
                         android:offset="1"
                         />
                 </gradient>

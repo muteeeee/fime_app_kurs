@@ -1,0 +1,126 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/result_activity_backgrounbd">
+
+
+    <TextView
+        android:id="@+id/fimelogo"
+        android:layout_width="wrap_content"
+        android:layout_height="142dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="59dp"
+        android:fontFamily="@font/iceberg"
+        android:gravity="center_horizontal"
+        android:lineHeight="156sp"
+        android:text="@string/fime"
+        android:textAppearance="@style/fime" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="43dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/back_arrow"
+        android:gravity="center_vertical"
+        android:textColor="@color/white" />
+
+    <Spinner
+        android:id="@+id/genreSpinner"
+        android:layout_width="180sp"
+        android:layout_height="33sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="239dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/spiners" />
+
+    <Spinner
+        android:id="@+id/yearSpinner"
+        android:layout_width="180sp"
+        android:layout_height="33sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="239dp"
+        android:background="@drawable/spiners" />
+
+    <TextView
+        android:id="@+id/yearLabel"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="242dp"
+        android:text="Год выхода:"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/genreLabel"
+        android:layout_width="92dp"
+        android:layout_height="39dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="238dp"
+        android:layout_marginTop="232dp"
+        android:text="Жанр:"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="593dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="1dp">
+
+        <LinearLayout
+            android:id="@+id/verticalLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tips_and_settings"
+        android:layout_width="264dp"
+        android:layout_height="51dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginLeft="82dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="82dp"
+        android:fontFamily="@font/iceberg"
+        android:gravity="center_horizontal|top"
+        android:lineHeight="39sp"
+        android:text="Choose for You"
+        android:textAppearance="@style/tips_and_sett" />
+
+
+</RelativeLayout>
+
