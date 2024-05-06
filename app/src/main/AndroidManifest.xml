@@ -18,9 +18,6 @@
         <activity
             android:name=".ResultActivity" />
         <activity
-            android:name=".HistoryActivity"
-            android:exported="false" />
-        <activity
             android:name=".game_selection"
             android:exported="false" />
         <activity

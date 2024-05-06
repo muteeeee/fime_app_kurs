@@ -1,6 +1,7 @@
 package com.example.fime_app;
 
 import android.content.Intent;
+import android.widget.Toast;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -35,10 +36,6 @@ public class game_selection extends AppCompatActivity {
                         startActivity(new Intent(getApplicationContext(), Setting_tips.class));
                         overridePendingTransition(0, 0);
                         return true;
-                    case R.id.History:
-                        startActivity(new Intent(getApplicationContext(), HistoryActivity.class));
-                        overridePendingTransition(0, 0);
-                        return true;
                     case R.id.Search:
                         return true;
                     case R.id.Ongoing:
@@ -61,12 +58,22 @@ public class game_selection extends AppCompatActivity {
         findGamesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(game_selection.this, ResultActivity.class);
-                intent.putExtra("processor", processorSpinner.getSelectedItem().toString());
-                intent.putExtra("graphicsCard", graphicsCardSpinner.getSelectedItem().toString());
-                intent.putExtra("ram", ramSpinner.getSelectedItem().toString());
-                intent.putExtra("operatingSystem", operatingSystemSpinner.getSelectedItem().toString());
-                startActivity(intent);
+                // Проверяем, выбраны ли все параметры комплектующих
+                if (processorSpinner.getSelectedItemPosition() == 0 ||
+                        graphicsCardSpinner.getSelectedItemPosition() == 0 ||
+                        ramSpinner.getSelectedItemPosition() == 0 ||
+                        operatingSystemSpinner.getSelectedItemPosition() == 0) {
+                    // Если не выбраны, выводим сообщение и не переходим на новое активити
+                    Toast.makeText(game_selection.this, "Выберите комплектующие", Toast.LENGTH_SHORT).show();
+                } else {
+                    // Если все параметры выбраны, создаем интент и передаем данные в новое активити
+                    Intent intent = new Intent(game_selection.this, ResultActivity.class);
+                    intent.putExtra("processor", processorSpinner.getSelectedItem().toString());
+                    intent.putExtra("graphicsCard", graphicsCardSpinner.getSelectedItem().toString());
+                    intent.putExtra("ram", ramSpinner.getSelectedItem().toString());
+                    intent.putExtra("operatingSystem", operatingSystemSpinner.getSelectedItem().toString());
+                    startActivity(intent);
+                }
             }
         });
     }

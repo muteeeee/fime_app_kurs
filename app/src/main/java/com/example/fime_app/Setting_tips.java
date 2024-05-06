@@ -30,10 +30,6 @@ public class Setting_tips extends AppCompatActivity {
                 {
                     case R.id.Setting:
                         return  true;
-                    case R.id.History:
-                        startActivity(new Intent(getApplicationContext(),HistoryActivity.class));
-                        overridePendingTransition(0,0);
-                        return  true;
                     case R.id.Search:
                         startActivity(new Intent(getApplicationContext(), game_selection.class));
                         overridePendingTransition(0,0);

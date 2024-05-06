@@ -4,11 +4,22 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="428dp"
-    android:layout_height="926dp"
-    android:clipToOutline="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@drawable/ongoing"
     tools:context=".Ongoing">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@android:color/transparent"
+        android:gravity="bottom|center_horizontal"
+        app:itemIconSize="48dp"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_nav" />
 
     <TextView
         android:id="@+id/fimelogo"
@@ -25,22 +36,6 @@
         android:lineHeight="156sp"
         android:text="@string/fime"
         android:textAppearance="@style/fime" />
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
-        android:layout_width="408dp"
-        android:layout_height="75dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="777dp"
-        android:layout_marginEnd="1dp"
-        android:background="@android:color/transparent"
-        android:gravity="bottom|center_horizontal"
-        app:itemIconSize="48dp"
-        app:labelVisibilityMode="unlabeled"
-        app:menu="@menu/bottom_nav" />
 
     <TextView
         android:id="@+id/tips_and_settings"
@@ -60,160 +55,171 @@
         android:text="Ongoing games"
         android:textAppearance="@style/tips_and_sett" />
 
+    <RelativeLayout
+        android:id="@+id/game_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible">
 
     <ImageView
-        android:layout_width="385dp"
-        android:layout_height="16dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="-2dp"
-        android:layout_marginTop="548dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="495dp"
+        android:layout_marginEnd="34dp"
         android:src="@drawable/arrow_4" />
 
 
-    <TextView
-        android:id="@+id/counter_str"
-        android:layout_width="346dp"
-        android:layout_height="175dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginTop="564dp"
-        android:layout_marginEnd="70dp"
-        android:fontFamily="@font/iceberg"
-        android:gravity="top"
-        android:text="Более двух десятилетий Counter-Strike служит примером первоклассной соревновательной игры, путь развития которой определяют миллионы игроков со всего мира. Но пришло время нового этапа: Counter-Strike 2."
-        android:textColor="@color/black"
-        android:textSize="16sp" />
+        <TextView
+            android:id="@+id/game_title"
+            android:layout_width="377dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="415dp"
+            android:layout_marginEnd="7dp"
+            android:fontFamily="@font/iceberg"
+            android:gravity="left|top"
+            android:textAppearance="@style/tips_and_sett" />
 
-
-    <TextView
-        android:id="@+id/Gamename"
-        android:layout_width="204dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginTop="468dp"
-        android:layout_marginEnd="195dp"
-        android:fontFamily="@font/iceberg"
-        android:gravity="left|top"
-        android:lineHeight="39sp"
-        android:text="Name_game"
-        android:textAppearance="@style/tips_and_sett" />
-
-    <TextView
-        android:id="@+id/BDdatarazrab"
-        android:layout_width="108dp"
-        android:layout_height="37dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginTop="511dp"
-        android:layout_marginEnd="291dp"
-        android:fontFamily="@font/iceberg"
-        android:gravity="top"
-        android:text="Valve
-                        22 авг. 2023"
-        android:textColor="#000000"
-        android:textSize="15sp" />
-
-    <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="259dp"
-        android:layout_marginEnd="0dp"
-        android:scrollbars="none">
-
-        <LinearLayout
+        <TextView
+            android:id="@+id/game_description"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="165dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="511dp"
+            android:layout_marginEnd="3dp"
+            android:fontFamily="@font/iceberg"
+            android:gravity="top"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/game_release_date"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="475dp"
+            android:layout_marginEnd="269dp"
+            android:fontFamily="@font/iceberg"
+            android:gravity="top"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/game_developer"
+            android:layout_width="197dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/game_title"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="187dp"
+            android:fontFamily="@font/iceberg"
+            android:gravity="top"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="259dp"
+            android:layout_marginEnd="0dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
 
-            <ImageButton
-                android:id="@+id/scrllviewbox"
-                android:layout_width="145dp"
-                android:layout_height="180dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="9dp"
-                android:background="@drawable/scrollview_imagebox" />
+                <ImageButton
+                    android:id="@+id/scrllviewbox"
+                    android:layout_width="110dp"
+                    android:layout_height="140dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/gta6_i" />
 
-            <ImageButton
-                android:id="@+id/scrllviewbox1"
-                android:layout_width="145dp"
-                android:layout_height="180dp"
-                android:layout_marginLeft="19dp"
-                android:layout_marginTop="9dp"
-                android:layout_weight="1"
-                android:background="@drawable/scrollview_imagebox" />
+                <ImageButton
+                    android:id="@+id/scrllviewbox1"
+                    android:layout_width="110dp"
+                    android:layout_height="140dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/stalker2" />
 
-            <ImageButton
-                android:id="@+id/scrllviewbox2"
-                android:layout_width="145dp"
-                android:layout_height="180dp"
-                android:layout_marginLeft="19dp"
-                android:layout_marginTop="9dp"
-                android:layout_weight="1"
-                android:background="@drawable/scrollview_imagebox" />
+                <ImageButton
+                    android:id="@+id/scrllviewbox2"
+                    android:layout_width="110dp"
+                    android:layout_height="140dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/tes6_i" />
 
-            <ImageButton
-                android:id="@+id/scrllviewbox3"
-                android:layout_width="145dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="19dp"
-                android:layout_marginTop="9dp"
-                android:layout_weight="1"
-                android:background="@drawable/scrollview_imagebox" />
+                <ImageButton
+                    android:id="@+id/scrllviewbox3"
+                    android:layout_width="110dp"
+                    android:layout_height="140dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/geath2_i" />
 
-            <ImageButton
-                android:id="@+id/scrllviewbox4"
-                android:layout_width="145dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="19dp"
-                android:layout_marginTop="9dp"
-                android:layout_weight="1"
-                android:background="@drawable/scrollview_imagebox" />
-
-            <ImageButton
-                android:id="@+id/scrllviewbox5"
-                android:layout_width="145dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="19dp"
-                android:layout_marginTop="9dp"
-                android:layout_weight="1"
-                android:background="@drawable/scrollview_imagebox" />
-
-            <ImageButton
-                android:id="@+id/scrllviewbox6"
-                android:layout_width="145dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="19dp"
-                android:layout_marginTop="9dp"
-                android:layout_weight="1"
-                android:background="@drawable/scrollview_imagebox" />
+                <ImageButton
+                    android:id="@+id/scrllviewbox4"
+                    android:layout_width="110dp"
+                    android:layout_height="140dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/assasinscreed_i" />
+                <ImageButton
+                    android:id="@+id/scrllviewbox5"
+                    android:layout_width="110dp"
+                    android:layout_height="140dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/humanflat2_i" />
+                <ImageButton
+                    android:id="@+id/scrllviewbox6"
+                    android:layout_width="110dp"
+                    android:layout_height="140dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/zarya_i" />
 
 
-        </LinearLayout>
+            </LinearLayout>
 
-    </HorizontalScrollView>
+        </HorizontalScrollView>
 
 
-</RelativeLayout>
+    </RelativeLayout>
 
 
 

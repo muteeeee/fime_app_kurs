@@ -4,7 +4,7 @@
     </string>
 
     <string name="fime" translatable="false">
-FIME
+    FIME
 </string>
 
     <string name="find_your_g">
@@ -13,10 +13,6 @@ Find {Your} game\n
 
     <string name="buttonPristupi">
  Приступим
-    </string>
-
-    <string name="Uslovia_text">
-      Я согласен(а) с условими пользования приложением
     </string>
 
     <string name="tips_and_se">
@@ -81,20 +77,36 @@ OS - это операционная система которая устано�
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
-
     <string name="Fime_Finder">GameFinder</string>
     <string-array name="processors_array">
-        <item>INTEL CORE I3</item>
-        <item>INTEL CORE I5</item>
-        <item>INTEL CORE I7</item>
+        <item>Не выбрано</item>
+        <item>AMD Ryzen 5 3600</item>
+        <item>Intel Core i3-10100F</item>
+        <item>AMD Ryzen 5 2600</item>
+        <item>Intel Core i5-11400F</item>
+        <item>AMD Ryzen 5 5600X</item>
+        <item>Intel Core i7-11700KF</item>
+        <item>AMD Ryzen 7 5800X</item>
+        <item>Intel Core i5-12600KF</item>
+        <item>AMD Ryzen 9 5950X</item>
+        <item>Intel Core i9-12900KF</item>
+
     </string-array>
     <string-array name="graphics_cards_array">
-        <item>GTX 1050</item>
-        <item>GTX 1660</item>
-        <item>RTX 3060</item>
-        <item>RTX 4090</item>
+        <item>Не выбрано</item>
+        <item>GeForce GTX 1050 Ti</item>
+        <item>GeForce GTX 1660 Super</item>
+        <item>GeForce RTX 2060 Super</item>
+        <item>GeForce RTX 3050</item>
+        <item>GeForce RTX 3060</item>
+        <item>Radeon RX 6650 XT</item>
+        <item>GeForce RTX 3070 TI</item>
+        <item>GeForce RTX 3080 Ti</item>
+        <item>GeForce RTX 4080 SUPER</item>
+        <item>GeForce RTX 4090</item>
     </string-array>
     <string-array name="ram_array">
+        <item>Не выбрано</item>
         <item>4GB</item>
         <item>8GB</item>
         <item>16GB</item>
@@ -102,14 +114,10 @@ OS - это операционная система которая устано�
         <item>64GB</item>
     </string-array>
     <string-array name="operating_systems_array">
+        <item>Не выбрано</item>
         <item>Windows</item>
         <item>Linux</item>
-        <item>macOS</item>
     </string-array>
-
-
-
-
     <string-array name="genres_array">
         <item>Не выбрано</item>
         <item>FPS Shooter</item>
@@ -138,10 +146,5 @@ OS - это операционная система которая устано�
         <item>2009</item>
         <item>2005</item>
         <item>2000</item>
-
     </string-array>
-
-
-
-
 </resources>

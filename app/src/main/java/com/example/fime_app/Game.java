@@ -1,6 +1,6 @@
 package com.example.fime_app;
 
-public class    Game {
+public class Game {
 
     private String name;
     private int processorRequirement;
@@ -76,12 +76,26 @@ public class    Game {
 
     private int getProcessorValue(String processor) {
         switch (processor) {
-            case "INTEL CORE I3":
+            case "AMD Ryzen 5 3600":
                 return 1;
-            case "INTEL CORE I5":
+            case " Intel Core i3-10100F":
                 return 2;
-            case "INTEL CORE I7":
+            case "AMD Ryzen 5 2600":
                 return 3;
+            case "Intel Core i5-11400F":
+                return 4;
+            case "AMD Ryzen 5 5600X":
+                return 5;
+            case "Intel Core i7-11700KF":
+                return 6;
+            case "AMD Ryzen 7 5800X":
+                return 7;
+            case "Intel Core i5-12600KF":
+                return 8;
+            case "AMD Ryzen 9 5950X":
+                return 9;
+            case "Intel Core i9-12900KF":
+                return 10;
             default:
                 return 0;
         }
@@ -89,14 +103,27 @@ public class    Game {
 
     private int getGraphicsCardValue(String graphicsCard) {
         switch (graphicsCard) {
-            case "GTX 1050":
+            case "GeForce GTX 1050 Ti":
                 return 1;
-            case "GTX 1660":
+            case "GeForce GTX 1660 Super":
                 return 2;
-            case "RTX 3060":
+            case "GeForce RTX 2060 Super":
                 return 3;
-            case "RTX 4090":
+            case "GeForce RTX 3050":
                 return 4;
+            case "GeForce RTX 3060":
+                return 5;
+            case "Radeon RX 6650 XT":
+                return 6;
+            case "GeForce RTX 3070 TI":
+                return 7;
+            case "GeForce RTX 3080 Ti":
+                return 8;
+            case "GeForce RTX 4080 SUPER":
+                return 9;
+            case "GeForce RTX 4090":
+                return 10;
+
             default:
                 return 0;
         }
@@ -125,8 +152,6 @@ public class    Game {
                 return 1;
             case "Linux":
                 return 2;
-            case "macOS":
-                return 3;
             default:
                 return 0;
         }
