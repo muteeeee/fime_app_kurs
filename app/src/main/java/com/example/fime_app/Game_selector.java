@@ -8,7 +8,7 @@ public class Game_selector {
     public static List<Game> findMatchingGames(String selectedProcessor, String selectedGraphicsCard, String selectedRAM, String selectedOperatingSystem) {
         List<Game> games = getGames();
         List<Game> matchingGames = new ArrayList<>();
-
+        // Находим все подходящие игры
         for (Game game : games) {
             if (game.matches(selectedProcessor, selectedGraphicsCard, selectedRAM, selectedOperatingSystem)) {
                 matchingGames.add(game);
